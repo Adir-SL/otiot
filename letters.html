@@ -6,7 +6,7 @@
     <title></title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.css" rel="stylesheet" />
     <!-- inject:css -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- endinject -->
   </head>
   <body class="letters-page-wrapper">
@@ -19,9 +19,11 @@
               <div class="line"></div>
               <div class="line"></div>
             </button>
-            <p class="gradient-text dynamic-font nav-title">
-              תנואות
-            </p>
+            <a href="index.html">
+              <p class="gradient-text dynamic-font-600 nav-title">
+                תנואות
+              </p>
+            </a>
           </div>
           <ul>
             <a href="">
@@ -30,12 +32,12 @@
               </li>
             </a>
             <a href="letters.html">
-              <li>
+              <li class="active">
                 האותיות
               </li>
             </a>
             <a href="free.html">
-              <li class="blue ktav">
+              <li>
                 הקלדה חופשית
               </li>
             </a>
@@ -76,32 +78,27 @@
           </span>
         </p>
       </div>
-      <div class="container">
+      <div class="container letter">
         <section class="by-letter">
           <div class="row">
             <div class="input-box">
               <p class="blue tiny">
                 רהיטות
               </p>
-              <div class="round-slider by-letter" data-style="font-variation-settings" data-unit="wght">
+              <div class="round-slider round-slider-small by-letter" data-style="font-variation-settings" data-unit="wght">
 
               </div>
               <!-- <input type="range" min=100 max=700 class="round"> -->
-              <div class="unit-box">
-                <p class="super-tiny yellow">
-                  12px
-                </p>
-              </div>
             </div>
             <div class="text-row wght-change-letter">
-              <p class="random-font blue" data-input=true>
+              <p class="random-font blue">
                 שלבי אבולוציה
               </p>
             </div>
           </div>
           <div class="row letter-row">
             <div class="input-box text change-letter">
-              <input type="text" pattern="/[\u0590-\u05FF]/" placeholder="א" maxlength="1">
+              <input type="text" pattern="/[\u0590-\u05FF]/" value="א" maxlength="1">
             </div>
             <div class="text-row">
               <p class="dynamic-font gradient-text fixed-letters">
@@ -127,47 +124,38 @@
                 <p class="blue tiny">
                   רהיטות
                 </p>
-                <div class="round-slider by-row" data-style="font-variation-settings" data-unit="wght">
+                <div class="round-slider round-slider-small by-row" data-style="font-variation-settings" data-unit="wght">
 
                 </div>
                 <!-- <input type="range" min=100 max=700 class="round"> -->
-                <div class="unit-box">
-                  <p class="super-tiny yellow">
-                    12px
-                  </p>
-                </div>
               </div>
               <div class="input-box">
                 <p class="blue tiny" input-style='font-size'>
                   גודל אות
                 </p>
-                <input type="range" min=10 max=130 class="round linked by-row" data-style="font-size" data-unit='px'>
-                <div class="unit-box">
-                  <p class="super-tiny yellow">
-                    12px
-                  </p>
-                </div>
+                <input type="range" min=16 max=190 class="round linked by-row" data-style="font-size" data-unit='px'>
               </div>
               <div class="input-box">
                 <p class="blue tiny">
-                  רווח בין האותיות
+                  רווח בין אותיות
                 </p>
-                <input type="range" min=1 max=10 class="round linked by-row" data-style="letter-spacing" data-unit='px'>
-                <div class="unit-box">
-                  <p class="super-tiny yellow">
-                    12px
-                  </p>
-                </div>
+                <input type="range" min=0 max=200 class="round linked by-row" data-style="letter-spacing" data-unit='px'>
+              </div>
+              <div class="input-box">
+                <p class="blue tiny" input-style='font-size'>
+                  רווח בין שורות
+                </p>
+                <input type="range" min=0 max=190 class="round linked by-row" data-style="line-height" data-unit='px'>
               </div>
               <div class="input-box">
                 <p class="blue tiny">
                   צבע
                 </p>
                 <div class="colors">
-                  <button class="color blue"></button>
                   <button class="color black"></button>
-                  <button class="color red"></button>
                   <button class="color dark-blue"></button>
+                  <button class="color red"></button>
+                  <button class="color yellow"></button>
                 </div>
               </div>
             </div>
@@ -179,17 +167,19 @@
                 <textarea rows="1" class="row-input">טרנספורמציה אדפטציה</textarea>
               </div>
               <div class="text-row">
-                <textarea rows="1" class="row-input">
-הלכו והתרחקו זה מזה צורותיו של הכתב הייצוגי מצורתן של האותיות הרהוטות</textarea>
-              </div>
-              <div class="text-row">
                 <textarea rows="1" class="row-input">האותיות העבריות המרובעות שאנו קוראים וכותבים היום הן התגלגלותה של כתיבה רהוטה</textarea>
               </div>
               <div class="text-row">
-                <textarea rows="1" class="row-input">בעולם שבו הולך ונעלם כתב היד האנושי לטובת הקלדות במכשירים אלקטרוניים, יש מקום להמשיך לשמר את המסורת של הכתיבה הידנית, ולאגד את הצורניות שלה לכדי גופן יציב, פורמלי, קריא. גופן שלא מנסה להתחקות אחר תנועת היד האנושית הקליגרפית, אלא מביא את הצורניות שלה למקום עדכני, מיושב, שיודע לתפקד בין השאר, בפורמטים דיגיטליים שונים, ובמערכות טיפוגרפיות מורכבות.</textarea>
+                <textarea rows="1" class="row-input">הגמיש שפיתחתי, מנסה מצד אחד לשמר ולחקות את המסורת הצורנית של הכתיבה הידנית, ומצד שני, לקחת אותה כמה צעדים קדימה אל עבר המרחב הדיגיטלי שבו היא ממילא מתקיימת היום. הגופן אינו מנסה להתחקות אחר תנועת היד האנושית הקליגרפית בשלמותה, אלא מתאים את תכונותיו מחדש בעקבות שינוי הכלי הטכנולוגי. תפקידו הוא לתאר מהלך: התפתחות הנובעת מן העבר, והתקדמות אל עבר השלב הבא. במקביל, הוא מציית לכללי השפה ושומר על צורות מזוהות של אותיות, אם כי אינו מתחייב לבהירות מוחלטת, בייחוד בנקודות המעבר.</textarea>
               </div>
               <div class="text-row">
-                <textarea rows="1" class="row-input">הקליגרף המיומן בסין העתיקה פיתח את סגנון היד האופייני לו באמצעות ‘שקיפותו‘ של המכחול שבו כתב, וככל שהיה המכחול מוצלח יותר, כן עלתה כתיבתו יפה</textarea>
+                <textarea rows="1" class="row-input">הוריבאילית היא המדיום שדרכו אני מציגה תהליך, הצעה לתנועה אבולוציונית עדכנית. יתרונותיה הן גמישות ויזואלית, רעיונית ומחשבתית. היא מאפשרת לי לייצר מגוון רחב של צורות בפורמט אחד, לייצר מוביליות ותנועה בין השלבים, ולהגביר את האינטראקציה וחופש הבחירה של המשתמש. ה׳תנואות׳ מוטמעות בקוד, והן יודעות לתפקד בפורמטים דיגיטליים שונים, וגם להתאים את עצמן למערכות טיפוגרפיות מורכבות.</textarea>
+              </div>
+              <div class="text-row">
+                <textarea rows="1" class="row-input">אותיות כתב יד אלו אותיות שצורותיהן מתאימות לכתיבה מהירה בדיו על נייר, והן עגולות יותר, חופשיות וזורמות. אותיות אלו מכונות גם ”כתב רהוט” על שום מהירות הכתיבה.</textarea>
+              </div>
+              <div class="text-row">
+                <textarea rows="1" class="row-input">המיומן בסין העתיקה פיתח את סגנון היד האופייני לו באמצעות ‘שקיפותו‘ של המכחול שבו כתב, וככל שהיה המכחול מוצלח יותר, כן עלתה כתיבתו</textarea>
               </div>
             </div>
           </div>
@@ -202,8 +192,8 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.js"></script>
     <!-- inject:js -->
-    <script src="assets/js/jquery.fittext.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="/assets/js/jquery.fittext.js"></script>
+    <script src="/assets/js/scripts.js"></script>
     <!-- endinject -->
   </body>
 </html>
