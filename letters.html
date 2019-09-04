@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- endinject -->
   </head>
-  <body class="letters-page-wrapper">
+  <body class="letters-page-wrapper letters">
     <header>
       <div class="container">
         <nav class="third">
@@ -56,9 +56,11 @@
     <main class="letters-page">
       <div class="container">
         <section class="title">
-          <h1 class="main-title">
-            תנואות
-          </h1>
+          <a href="index.html">
+            <h1 class="main-title">
+              תנואות
+            </h1>
+          </a>
           <p class="tiny sep-text">
             מעברים
           </p>
@@ -87,6 +89,9 @@
               </p>
               <div class="round-slider round-slider-small by-letter" data-style="font-variation-settings" data-unit="wght">
 
+              </div>
+              <div class="range-tooltip">
+                100
               </div>
               <!-- <input type="range" min=100 max=700 class="round"> -->
             </div>
@@ -127,6 +132,9 @@
                 <div class="round-slider round-slider-small by-row" data-style="font-variation-settings" data-unit="wght">
 
                 </div>
+                <div class="range-tooltip">
+                  100
+                </div>
                 <!-- <input type="range" min=100 max=700 class="round"> -->
               </div>
               <div class="input-box">
@@ -134,28 +142,37 @@
                   גודל אות
                 </p>
                 <input type="range" min=16 max=190 class="round linked by-row" data-style="font-size" data-unit='px'>
+                <div class="range-tooltip">
+                  100
+                </div>
               </div>
               <div class="input-box">
                 <p class="blue tiny">
                   רווח בין אותיות
                 </p>
-                <input type="range" min=0 max=200 class="round linked by-row" data-style="letter-spacing" data-unit='px'>
+                <input type="range" min=0 max=50 class="round linked by-row" data-style="letter-spacing" data-unit='px'>
+                <div class="range-tooltip">
+                  100
+                </div>
               </div>
               <div class="input-box">
                 <p class="blue tiny" input-style='font-size'>
                   רווח בין שורות
                 </p>
                 <input type="range" min=0 max=190 class="round linked by-row" data-style="line-height" data-unit='px'>
+                <div class="range-tooltip">
+                  100
+                </div>
               </div>
               <div class="input-box">
                 <p class="blue tiny">
                   צבע
                 </p>
                 <div class="colors">
-                  <button class="color black"></button>
-                  <button class="color dark-blue"></button>
-                  <button class="color red"></button>
-                  <button class="color yellow"></button>
+                  <button class="color black" id="black"></button>
+                  <button class="color blue" id="blue"></button>
+                  <button class="color red" id="red"></button>
+                  <button class="color yellow" id="yellow"></button>
                 </div>
               </div>
             </div>
