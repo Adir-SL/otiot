@@ -1,3 +1,5 @@
+// THIS WILL ADJUST HTML FONT SIZES TO FIT IN THEIR PARENT CONTAINER
+
 /*global jQuery */
 /*!
 * FitText.js 1.2
